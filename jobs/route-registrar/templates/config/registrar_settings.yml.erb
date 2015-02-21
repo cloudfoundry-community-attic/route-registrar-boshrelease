@@ -6,7 +6,7 @@ port: <%= p("route_registrar.port") %>
 message_bus_servers:
   <% p("route_registrar.message_bus_servers").each do |server| %>
   - host: <%= server["host"] %>
-    name: <%= server["name"] %>
+    user: <%= server["user"] %>
     password: <%= server["password"] %>
   <% end %>
 

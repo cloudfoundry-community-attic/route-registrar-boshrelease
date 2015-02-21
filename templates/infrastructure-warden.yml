@@ -28,7 +28,7 @@ properties:
     port: 8080
     message_bus_servers:
     - host: 10.244.0.34
-      name: nats
+      user: nats
       password: nats
     health_checker:
       name: warden-test

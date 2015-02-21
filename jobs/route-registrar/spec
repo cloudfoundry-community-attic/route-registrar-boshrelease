@@ -16,7 +16,7 @@ properties:
   route_registrar.port:
     description: External port to include in routing advertisement
   route_registrar.message_bus_servers:
-    description: List of NATS (host/name/password)
+    description: List of NATS (host/user/password)
   route_registrar.health_checker.name:
     description: Label for health checker
   route_registrar.health_checker.interval:
