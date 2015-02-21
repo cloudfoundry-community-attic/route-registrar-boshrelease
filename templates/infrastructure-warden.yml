@@ -12,19 +12,10 @@ update:
   update_watch_time: 1000-30000
 
 jobs:
-  - name: route_registrar_leader_z1
+  - name: route_registrar
     instances: 1
     networks:
       - name: route_registrar1
-        static_ips: (( static_ips(0) ))
-  - name: route_registrar_z1
-    instances: 2
-    networks:
-      - name: route_registrar1
-        static_ips: ~
-    properties:
-      route_registrar:
-        leader_address: (( jobs.route_registrar_leader_z1.networks.route_registrar1.static_ips.[0] ))
 
 compilation:
   cloud_properties:

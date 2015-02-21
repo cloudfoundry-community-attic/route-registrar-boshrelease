@@ -9,19 +9,10 @@ meta:
     version: latest
 
 jobs:
-  - name: route_registrar_leader_z1
+  - name: route_registrar
     instances: 1
     networks:
       - name: route_registrar1
-    persistent_disk: (( meta.persistent_disk ))
-  - name: route_registrar_z1
-    instances: 2
-    networks:
-      - name: route_registrar1
-    persistent_disk: (( meta.persistent_disk ))
-    properties:
-      route_registrar:
-        leader_address: (( "0.route-registrar-leader-z1.route-registrar1." meta.environment "." meta.dns_root ))
 
 compilation:
   cloud_properties:

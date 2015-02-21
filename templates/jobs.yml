@@ -9,24 +9,12 @@ update:
   serial: false
 
 jobs:
-  - name: route_registrar_leader_z1
+  - name: route_registrar
     template: route-registrar
     instances: 0
     resource_pool: small_z1
     networks: (( merge ))
-    persistent_disk: 0
     properties: {}
-  - name: route_registrar_z1
-    template: route-registrar
-    instances: 0
-    resource_pool: small_z1
-    networks: (( merge ))
-    persistent_disk: 0
-    update:
-      canaries: 10
-    properties:
-      route_registrar:
-        leader_address: (( merge ))
 
 networks: (( merge ))
 
