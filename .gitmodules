@@ -1,0 +1,18 @@
+[submodule "src/route-registrar/src/github.com/apcera/nats"]
+	path = src/route-registrar/src/github.com/apcera/nats
+	url = https://github.com/apcera/nats
+[submodule "src/route-registrar/src/github.com/cloudfoundry-incubator/route-registrar"]
+	path = src/route-registrar/src/github.com/cloudfoundry-incubator/route-registrar
+	url = https://github.com/cloudfoundry-incubator/route-registrar
+[submodule "src/route-registrar/src/github.com/cloudfoundry/gibson"]
+	path = src/route-registrar/src/github.com/cloudfoundry/gibson
+	url = https://github.com/cloudfoundry/gibson
+[submodule "src/route-registrar/src/github.com/cloudfoundry/yagnats"]
+	path = src/route-registrar/src/github.com/cloudfoundry/yagnats
+	url = https://github.com/cloudfoundry/yagnats
+[submodule "src/route-registrar/src/github.com/fraenkel/candiedyaml"]
+	path = src/route-registrar/src/github.com/fraenkel/candiedyaml
+	url = https://github.com/fraenkel/candiedyaml
+[submodule "src/route-registrar/src/github.com/nu7hatch/gouuid"]
+	path = src/route-registrar/src/github.com/nu7hatch/gouuid
+	url = https://github.com/nu7hatch/gouuid
