@@ -18,4 +18,14 @@ jobs:
 
 networks: (( merge ))
 
-properties: {}
+properties:
+  route_registrar:
+    external_host: (( merge ))
+    external_ip: (( merge ))
+    port: (( merge ))
+    message_bus_servers:
+    - host: (( merge ))
+      name: nats
+      password: nats
+    health_checker:
+      name: (( merge ))

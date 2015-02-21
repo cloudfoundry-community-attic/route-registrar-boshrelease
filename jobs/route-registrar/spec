@@ -1,13 +1,24 @@
 ---
 name: route-registrar
-packages: []
+packages: [route-registrar]
 templates:
   bin/monit_debugger: bin/monit_debugger
   bin/route_registrar_ctl: bin/route_registrar_ctl
-  config/route_registrar.conf.erb: config/route_registrar.conf
+  config/registrar_settings.yml.erb: config/registrar_settings.yml
   data/properties.sh.erb: data/properties.sh
   helpers/ctl_setup.sh: helpers/ctl_setup.sh
   helpers/ctl_utils.sh: helpers/ctl_utils.sh
 properties:
-  route_registrar.leader_address:
-    description: Hostname/IP to the leader/master of the cluster
+  route_registrar.external_host:
+    description: Advertise hostname to router
+  route_registrar.external_ip:
+    description: External IP to include in routing advertisement
+  route_registrar.port:
+    description: External port to include in routing advertisement
+  route_registrar.message_bus_servers:
+    description: List of NATS (host/name/password)
+  route_registrar.health_checker.name:
+    description: Label for health checker
+  route_registrar.health_checker.interval:
+    description: Interval in seconds for health checker
+    default: 10

@@ -1,0 +1,15 @@
+---
+external_host: <%= p("route_registrar.external_host") %>
+external_ip: <%= p("route_registrar.external_ip") %>
+port: <%= p("route_registrar.port") %>
+
+message_bus_servers:
+  <% p("route_registrar.message_bus_servers").each do |server| %>
+  - host: <%= server["host"] %>
+    name: <%= server["name"] %>
+    password: <%= server["password"] %>
+  <% end %>
+
+health_checker:
+  name: <%= p("route_registrar.health_checker.name") %>
+  interval: <%= p("route_registrar.health_checker.interval") %>

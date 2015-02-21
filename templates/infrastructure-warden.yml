@@ -12,10 +12,26 @@ update:
   update_watch_time: 1000-30000
 
 jobs:
-  - name: route_registrar
+  - name: route-registrar
+    templates:
+    - name: route-registrar
+      release: route-registrar
     instances: 1
     networks:
       - name: route_registrar1
+        static_ip: (( static_ips(0) ))
+
+properties:
+  route_registrar:
+    external_host: warden.test
+    external_ip: jobs.route_registrar.networks.route_registrar1.static_ips.[0]
+    port: 8080
+    message_bus_servers:
+    - host: 10.244.0.34
+      name: nats
+      password: nats
+    health_checker:
+      name: warden-test
 
 compilation:
   cloud_properties:
