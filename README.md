@@ -1,6 +1,12 @@
-# BOSH Release for route-registrar
+BOSH Release for route-registrar
+================================
 
-## Usage
+Continuously broadcast a route using NATS to the CF router.
+
+Colocate the `route-registrar` job template with any process that wants to have an HTTP hostname routed to it via the Cloud Foundry router.
+
+Usage
+-----
 
 To use this bosh release, first upload it to your bosh:
 
@@ -31,7 +37,7 @@ For AWS & Openstack, the default deployment assumes there is a `default` securit
 
 Create a file `my-networking.yml`:
 
-``` yaml
+```yaml
 ---
 networks:
   - name: route-registrar1
