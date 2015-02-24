@@ -18,5 +18,5 @@ jobs:
   sha1: 1010cc79a5e404e6cb8a6e615db0349a4a662d90
 commit_hash: 913c3424
 uncommitted_changes: true
-name: router-registrar
+name: route-registrar
 version: '1'
