@@ -1,0 +1,22 @@
+---
+packages:
+- name: golang
+  version: 40d201bcfdab32349f157696d455e3759014c57e
+  fingerprint: 40d201bcfdab32349f157696d455e3759014c57e
+  sha1: 6c84726b63f819934e04c2ac7b4dd1fde4b3d916
+  dependencies: []
+- name: route-registrar
+  version: 2e66adcb0d01acf92ef5d55ab23e84c68f736e54
+  fingerprint: 2e66adcb0d01acf92ef5d55ab23e84c68f736e54
+  sha1: cde82cd80192f9ece8aef5f876d17103a5266b58
+  dependencies:
+  - golang
+jobs:
+- name: route-registrar
+  version: 8bced3e1613d0e78ba3549d96ecc453a2d9d9271
+  fingerprint: 8bced3e1613d0e78ba3549d96ecc453a2d9d9271
+  sha1: 1010cc79a5e404e6cb8a6e615db0349a4a662d90
+commit_hash: 2ee70e65
+uncommitted_changes: false
+name: route-registrar
+version: '2'
