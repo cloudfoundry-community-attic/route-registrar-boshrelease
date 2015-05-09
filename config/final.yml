@@ -3,4 +3,4 @@ blobstore:
   provider: s3
   options:
     bucket_name: route-registrar-boshrelease
-final_name: router-registrar
+final_name: route-registrar
