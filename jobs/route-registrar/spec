@@ -12,7 +12,7 @@ properties:
   route_registrar.external_host:
     description: Advertise hostname to router
   route_registrar.external_ip:
-    description: External IP to include in routing advertisement
+    description: External IP to include in routing advertisement (optional, will self-lookup)
   route_registrar.port:
     description: External port to include in routing advertisement
   route_registrar.message_bus_servers:

@@ -1,6 +1,6 @@
 ---
 external_host: <%= p("route_registrar.external_host") %>
-external_ip: <%= p("route_registrar.external_ip") %>
+external_ip: <%= p("route_registrar.external_ip", spec.networks.send(spec.networks.methods(false).first).ip) %>
 port: <%= p("route_registrar.port") %>
 
 message_bus_servers:
