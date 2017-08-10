@@ -1,4 +1,9 @@
-# Deploy route-registrar using BOSH
+# DEPRECATED
+
+**Please use CF Core team's https://github.com/cloudfoundry-incubator/routing-release**
+
+
+## Deploy route-registrar using BOSH
 
 Continuously broadcast a route using NATS to the CF router.
 
